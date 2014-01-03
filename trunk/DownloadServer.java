@@ -47,7 +47,8 @@ public class DownloadServer extends Thread
 				    }
 				catch (Exception e)
 				    {
-					System.out.println("Unable to upload file.");
+                                        e.printStackTrace();
+					System.out.println("Unable to upload file ! \n");
 				    }
 				    
 			    }
