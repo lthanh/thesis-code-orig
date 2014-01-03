@@ -26,6 +26,7 @@ public class Mine
     }
     catch (Exception e)
     {
+        e.printStackTrace();
     }
   }
 

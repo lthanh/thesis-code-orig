@@ -15,7 +15,7 @@ public class Pinger extends Thread
 		    }
 		catch (Exception e)
 		    {
-			System.out.println(e.getMessage());
+			e.printStackTrace();
 		    }
 		Searcher.updateInfo(hosts, totalkb, totalfiles);
 		myping = new Ping();

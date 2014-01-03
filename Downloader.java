@@ -21,7 +21,7 @@ public class Downloader extends Thread
     public void run()
     {
 	try
-	    {System.out.println("Downloader started.");
+	    {System.out.println("Downloader started! \n");
 		Socket s = new Socket(myip, myport);
 		Connection connection = new Connection(s, Connection.DOWNLOADING);
 
@@ -75,7 +75,8 @@ public class Downloader extends Thread
 	    }
 	catch (IOException e)
 	    {
-		System.out.println("Unable to connect.");
+                e.printStackTrace();
+		System.out.println("Unable to connect \n");
 	    }
     }
 }

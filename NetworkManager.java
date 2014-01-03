@@ -26,7 +26,7 @@ public class NetworkManager
         }
         catch (IOException exception)
         {
-          System.err.println(exception);
+            e.printStackTrace();
         }
       } 
     }
